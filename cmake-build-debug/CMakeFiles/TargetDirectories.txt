@@ -1,0 +1,3 @@
+E:/SkillboxProject/23_practice/macro_InOut/cmake-build-debug/CMakeFiles/macro_InOut.dir
+E:/SkillboxProject/23_practice/macro_InOut/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/SkillboxProject/23_practice/macro_InOut/cmake-build-debug/CMakeFiles/rebuild_cache.dir
