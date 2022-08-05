@@ -8,7 +8,7 @@
 #define SATURDAY (6)
 #define SUNDAY (7)
 #define DEFAULT "There is no day of the week with this number"
-#define DAYN (d ,n) d ## _ ## n // не работает
+#define DAYN (d ,n) d##_##n
 #define DAY_D1 "Monday is the Day with this number"
 #define DAY_D2 "Tuesday is the Day with this number"
 #define DAY_D3 "Wednesday is the Day with this number"
@@ -25,12 +25,12 @@ int main() {
 
     switch (day){
         case MONDAY :    std::cout << /*DAYN (DAY,D1)*/  DAY_D1 << std::endl; break; // DAYN выдает ошибки
-        case TUESDAY :   std::cout << /*DAYN (DAY,D2)*/  DAY_D2  << std::endl; break; // Use of undeclared identifier 'd'
+        case TUESDAY :   std::cout << /*DAYN (DAY,D2)*/  DAY_D2 << std::endl; break; // Use of undeclared identifier 'd'
         case WEDNESDAY : std::cout << /*DAYN (DAY,D3)*/  DAY_D3 << std::endl; break; // Use of undeclared identifier 'n'
-        case THURSDAY :  std::cout << /*DAYN (DAY,D4)*/  DAY_D4<< std::endl; break;
-        case FRIDAY :    std::cout << /*DAYN (DAY,D5)*/  DAY_D5<< std::endl; break;
-        case SATURDAY :  std::cout << /*DAYN (DAY,D6)*/  DAY_D6<< std::endl; break;
-        case SUNDAY :    std::cout << /*DAYN (DAY,D7)*/  DAY_D7<< std::endl; break;
+        case THURSDAY :  std::cout << /*DAYN (DAY,D4)*/  DAY_D4 << std::endl; break; // "case (1) : std::cout << (d ,n) d_n (DAY,D1) << std::endl; break;"
+        case FRIDAY :    std::cout << /*DAYN (DAY,D5)*/  DAY_D5 << std::endl; break; // выдает в препроцессоре
+        case SATURDAY :  std::cout << /*DAYN (DAY,D6)*/  DAY_D6 << std::endl; break;
+        case SUNDAY :    std::cout << /*DAYN (DAY,D7)*/  DAY_D7 << std::endl; break;
         default : std::cout << DEFAULT << std::endl;
     }
 }
